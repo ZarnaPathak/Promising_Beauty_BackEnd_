@@ -103,20 +103,21 @@ form.example::after {
     </div>
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a href="/" class='bx bx-md bx-home' ></a></li>
+        <li><a href="/" class='bx bx-md bx-home' style="color: #0f1119;"></a></li>
         <li class="dropdown"><i class='bx bx-lg bx-user-check' class="bi bi-chevron-down"></i>
           <ul>
-            <li><a href="#"><b>My Profile</b></a></li>
+            <li><a href="dashboard/dashboard_page"><b>My Profile</b></a></li>
             <li><a href="#"><b>My Wishlist</b></a></li>
-            <li><a href="#"><b>My Cart</b></a></li>
+            <li><a href="dashboard/dashboard_page_cart"><b>My Cart</b></a></li>
             <li><a href="#"><b>My Orders</b></a></li>
             <li><a href="#"><b>Log Out</b> </a></li>
+
           </ul>
         </li>
       <!--  <li><a class="nav-link scrollto active" href="#hero"><strong>OFFER</strong></a></li>-->
-        <li> <i class='bx bx-lg bxs-cart'></i></li>
+        <li> <a href="addtocart/cart_page" class='bx bx-lg bxs-cart' style="color: #0f1119;"></a></li>
         <li><a class="getstarted scrollto" href="#about"><b>BLOG</b></a></li>
-        <li><a class="getstarted scrollto" href="#about"><b>Customize Here!</b></a></li>
+        <li><a class="getstarted scrollto" href="custom/custom_page"><b>Customize Here!</b></a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
@@ -164,7 +165,8 @@ form.example::after {
       </div>
       <!-- Gallery -->
 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0  portfolio-item filter-app" >
+  <a href="product/product_page">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0  portfolio-item filter-app" >
     <img
       src="https://m.media-amazon.com/images/G/31/img2020/img21/kids/Kids_Style_Fest/Dec22/GW/QC/Spotlight._CB617855166_.gif"
       class="w-100 shadow-1-strong rounded mb-4"
@@ -177,6 +179,7 @@ form.example::after {
       alt="Wintry Mountain Landscape"
     />
   </div>
+</a>
 
   <div class="col-lg-4 mb-4 mb-lg-0  portfolio-item filter-card">
     <img
