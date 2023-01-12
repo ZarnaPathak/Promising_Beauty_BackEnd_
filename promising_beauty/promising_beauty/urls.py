@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('Home.urls')),
     path('custom/',include('customization.urls')),
-    path('product/',include('Products.urls'))
+    path('product/',include('Products.urls')),
+    path('addtocart/',include('Addtocart.urls'))
     ]
