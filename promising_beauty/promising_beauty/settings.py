@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'Authentication',
     'customization',
     'Products',
-    'Dashboard'
+    'Dashboard',
+    'Orders'
 ]
 
 MIDDLEWARE = [

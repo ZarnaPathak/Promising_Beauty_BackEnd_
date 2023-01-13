@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <!-- === Coding by CodingLab | www.codinglabweb.com === -->
 <html lang="en">
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
          
     <title>Customer Register Login</title>
 </head>
@@ -106,9 +107,8 @@
         </div>
     </div>
     <div class="form login">
-        <img src="assets/img/reg_log.png" style="height: 400px; width:500px; margin-left:100px;">
+        <img src="{% static 'img/reg_log.png' %}" style="height: 400px; width:500px; margin-left:100px;">
     </div>
-    <script src="assets/js/script1.js"></script>
-
+    <script src="{% static 'js/script1.js' %}"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@
 
   <!-- Favicons -->
   <link href="{% static 'img/favicon.png' %}" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
@@ -90,6 +90,87 @@
     .bx1{
       color: #de779d;
     }
+    /* Style the search field */
+ .example{
+  margin-left: 77px;
+  height: 53px;
+  width: 550px;
+}
+form.example input[type=text] {
+  padding: 10px;
+  height: 50px;
+  width:200px;
+  font-size: 17px;
+  border: none; /*1px solid rgb(0, 0, 0)*/
+  float: left;
+  width: 80%;
+  background: #ffffff;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  height: 51px;
+  width: 20%;
+  padding: 10px;
+  background: #0f1119 ;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background:grey;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.card {
+   width: 1300px;
+   height: 320px;
+   border: #0f1119;
+   margin-left: 0px;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+.card-body{
+ margin-left: 0px;
+}
+.card-body1{
+   margin-left: 1px;
+   margin-top: 1px;
+}
+
+.form-control-sm {
+   min-height: calc(1.5em + 0.5rem + 2px);
+   padding: 0.25rem 0.5rem;
+   font-size: .875rem;
+   border-radius: 0.25rem;
+   width: 65px;
+}
+.px-2 {
+   padding-right: 0.5rem!important;
+   padding-left: 0.5rem!important;
+   margin-left: 0px;
+}
+.d1{
+  margin-left: -60px;
+}
+.d2{
+  width: 200px;
+}
+.icon-black{
+  color: rgb(238, 62, 150);
+}
+.icon-black1{
+  color: black;
+}
   </style>
 </head>
 
@@ -160,55 +241,97 @@
         <div class="row">
           <div class="col lg-3" style="background-color:rgb(255, 244, 251);">
             <div class="text-center" style=" margin-top:20px;">
-              <img src="assets/img/profile-img.jpg" alt="" style="height:100px" class="img-fluid rounded-circle">
+              <img src="{% static 'img/profile-img.jpg' %}" alt="" style="height:100px" class="img-fluid rounded-circle">
               <h3 class="text-dark"><a>Customer Name</a></h3>
             </div>
             <div class="text-start">
               <ul class="nav-menu1">
-                <li><a href="#hero" class="nav-link scrollto active"><i class='bx bxs-user'></i> <span>Profile</span></a></li><hr>
+                <li><a href="#hero" class="nav-link scrollto"><i class='bx bxs-user'></i> <span>Profile</span></a></li><hr>
                 <li><a href="#about" class="nav-link scrollto"><i class='bx bxs-heart'></i> <span>Wishlist</span></a></li><hr>
-                <li><a href="#resume" class="nav-link scrollto"><i class='bx bxs-cart'></i> <span>My Cart</span></a></li><hr>
-                <li><a href="customer_order_detail.html" class="nav-link"><i class='bx bxs-folder-plus'></i> <span>My Orders</span></a></li><hr>
+                <li><a href="customer_cart.html" class="nav-link scrollto"><i class='bx bxs-cart'></i> <span>My Cart</span></a></li><hr>
+                <li><a href="customer_order_detail.html" class="nav-link active"><i class='bx bxs-folder-plus'></i> <span>My Orders</span></a></li><hr>
                 <li><a href="#contact" class="nav-link scrollto"><i class='bx bx-log-out'></i> <span>Log Out</span></a></li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-9" style="height:650px; background-color:rgb(255, 244, 251);">
+          <div class="col-lg-9" style="height:650px; background-color:rgb(255, 244, 251);overflow-x:hidden; overflow-y:auto;">
             <!-- ======= Hero Section ======= -->
-            <section id="" class="d-flex flex-column justify-content-start">
-              <div class="row justify-content-end">
-                <div class="form-group col-lg-1"><a href="dashboard_profileset"><i class='bx bxs-edit bx-md bx1'></i></a></div>
-              </div>
-              <div class="container fst-normal">
-                <div class="form-group card card-body p-5">
-                  <form class="form-card">
-                    <div class="row justify-content-between text-left p-3">
-                        <div class="form-group col-sm-6 flex-column d-flex p-1"> <label class="form-control-label px-3"><b>Name : </b><label class="form-control-label px-3"><b>Pinky Mishra</b></label></label></div>
-                        
+            <!-- End Hero -->
+            <!--Customer Order Detail Start-->
+            <section>
+                <!--<div class="container py-5" style="margin-bottom: 100px;border:2px solid black">-->
+                  <!--Your Cart Start-->
+                    <div class="card" style="width: 1300; height: 50px;">
+                      <div class="card-body2" style="margin-left:10px;">
+                      <strong><h3>YOUR ORDERS &nbsp;<i class='bx bxs-folder-plus icon-black1'></i></h3></strong>
+                      </div>
                     </div>
-                    <div class="row justify-content-between text-left p-3">
-                        <div class="form-group col-sm-8 flex-column d-flex p-1"> <label class="form-control-label px-3"><b>Address : 7, shreenath society, behind Nalanda School, 
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ghatlodia,Ahmedabad.</b></label></div>
-                        
+                  <!--Your Cart End-->
+                    <div class="container-fluid my-5 d-sm-flex justify-content-center">
+                      <div class="card">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <img src="{% static 'img/silk kurti 1.jpg' %}" style="width: 200px; height: 300px; margin-top: 10px; margin-left: 10px; margin-bottom: 10px;" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col-lg-4 d1">
+                            <div class="card-body">
+                              <p class="card-text">
+                              <h5><b>COTTON SILK KURTI</h5></b></h5>
+                                  Size:XL<BR>             
+                                <strong>Price:</strong><br>
+                                <h5 class="text-success"><b>899/-</b></h5>
+                                <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                        <i class='bx bx-minus icon-black'></i> 
+                                </button>
+                                <input id="form1" min="0" name="quantity" value="2" type="number"
+                                        class="form-control form-control-sm"  />
+                      
+                                <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" >
+                                        <i class='bx bx-plus icon-black'></i>
+                                </button><br>
+                                <button type="button" class="btn btn-outline-dark btn-sm" style="width: 100px;"><strong>Status</strong></button>
+                                <div class="col-lg-4 d2" style="margin-left: 400px;margin-top: -259px;">
+                                  Ordered On Tue Dec 27 <h5 class="text-success">Free Delivery Charges</h5>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="row justify-content-start text-left p-3">
-                      <div class="form-group col-sm-3 flex-column d-flex p-1"> <label class="form-control-label px-3"><b>State : Gujarat</b><span class="text-danger"></span></label> </div>
-                      <div class="form-group col-sm-6 flex-column d-flex p-1"> <label class="form-control-label px-3"><b>Zip Code : 380061</b><span class="text-danger"></span></label> </div>
+                    <div class="container-fluid my-5 d-sm-flex justify-content-center">
+                      <div class="card">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <img src="{% static 'img/silk kurti 1.jpg' %}" style="width: 200px; height: 300px; margin-top: 10px; margin-left: 10px; margin-bottom: 10px;" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col-lg-4 d1">
+                            <div class="card-body">
+                              <p class="card-text">
+                              <h5><b>COTTON SILK KURTI</h5></b></h5>
+                                  Size:XL<BR>             
+                                <strong>Price:</strong><br>
+                                <h5 class="text-success"><b>899/-</b></h5>
+                                <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                        <i class='bx bx-minus icon-black'></i> 
+                                </button>
+                                <input id="form1" min="0" name="quantity" value="2" type="number"
+                                        class="form-control form-control-sm"  />
+                      
+                                <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" >
+                                        <i class='bx bx-plus icon-black'></i>
+                                </button><br>
+                                <button type="button" class="btn btn-outline-dark btn-sm" style="width: 100px;"><strong>Status</strong></button>
+                                <div class="col-lg-4 d2" style="margin-left: 400px;margin-top: -259px;">
+                                        Ordered On Tue Dec 27 <h5 class="text-success">Free Delivery Charges</h5>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <!--<div class="row justify-content-between text-left p-3">
-                        <div class="form-group col-sm-6 flex-column d-flex p-1"> <label class="form-control-label px-3">Job title<span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
-                    </div>
-                    <div class="row justify-content-between text-left p-3">
-                        <div class="form-group col-12 flex-column d-flex p-1"> <label class="form-control-label px-3">What would you be using Flinks for?<span class="text-danger"> *</span></label> <input type="text" id="ans" name="ans" placeholder="" onblur="validate(6)"> </div>
-                    </div>-->
-                    <!--<div class="row justify-content-end p-3">
-                        <div class="form-group col-lg-1 p-1"> <button type="submit" class="btn btn-lg" style="background-color: #de779d;color: #fff;">Save</button> </div>
-                    </div>-->
-                  </form>
-                </div>
-              </div>
+                <!--</div>-->
             </section>
-          <!-- End Hero -->
+            <!--Customer Order Detail Start-->
           </div>
         </div>
         
@@ -304,15 +427,15 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{% static 'js/main.js' %}"></script>
 
 </body>
 
