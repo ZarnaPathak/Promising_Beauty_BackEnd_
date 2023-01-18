@@ -7,4 +7,6 @@ def Dashboard(request):
 def Dashboard_cart(request):
     return render(request,'customer_cart.html')
 
+def Dashboard_profileset(request):
+    return render(request,'customer_profileset.html')
 

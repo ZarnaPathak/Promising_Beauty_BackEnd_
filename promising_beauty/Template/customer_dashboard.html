@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,22 +11,22 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
   
 
   <!-- =======================================================
@@ -176,14 +177,13 @@
             <!-- ======= Hero Section ======= -->
             <section id="" class="d-flex flex-column justify-content-start">
               <div class="row justify-content-end">
-                <div class="form-group col-lg-1"><a href="customer_profileset.html"><i class='bx bxs-edit bx-md bx1'></i></a></div>
+                <div class="form-group col-lg-1"><a href="dashboard_profileset"><i class='bx bxs-edit bx-md bx1'></i></a></div>
               </div>
               <div class="container fst-normal">
                 <div class="form-group card card-body p-5">
                   <form class="form-card">
                     <div class="row justify-content-between text-left p-3">
                         <div class="form-group col-sm-6 flex-column d-flex p-1"> <label class="form-control-label px-3"><b>Name : </b><label class="form-control-label px-3"><b>Pinky Mishra</b></label></label></div>
-                        
                         
                     </div>
                     <div class="row justify-content-between text-left p-3">
