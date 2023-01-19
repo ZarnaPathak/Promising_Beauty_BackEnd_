@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'customization',
     'Products',
     'Dashboard',
-    'Orders'
+    'Orders',
+    'Payment'
 ]
 
 MIDDLEWARE = [
